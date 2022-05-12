@@ -144,6 +144,16 @@ section {
     width: 100%;
     padding: 0;
 }
+.logo {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    z-index: 1;
+    width: 3.125rem;
+    height: 3.125rem;
+    fill: #fff;
+}
 
 .hero-slide {
     position: relative;
