@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/flickity.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./assets/js/flickity.min.js"></script>
+    <title>hearmeapp</title>
+</head>
+
+<body>
+    <main class="main-container">
+        <header class="mobile-header-sticky">
+
+            <div class="flex flex-v-center">
+                <div class="mobile-header__burger js-toggle-mobile-header">
+                    <div class="burger-button">
+                        <div class="burger-button__container">
+                            <div class="burger-button__burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="burger-button__cross">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-header-cover js-header-cover">
+                <div class="mobile-header">
+                    <div class="user-profile js-user-click">
+                        <span class="user flex flex-center flex-v-center">
+                            <svg class="icons user--icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M224 256c70.7 0 128-57.31 128-128S294.7 0 224 0 96 57.31 96 128s57.3 128 128 128zm50.7 48H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3c0-95.7-77.6-173.3-173.3-173.3z" />
+                            </svg>
+                        </span>
+                        <h2 class="user-title">Hi, Guest!</h2>
+                    </div>
+                    <div class="mobile-header-nav">
+                        <ul class="nav-wrapper">
+                            <li class="nav-item">Menu 1</li>
+
+                            <li class="nav-item">Menu 2</li>
+                            <li class="nav-item">Menu 3</li>
+                            <li class="nav-item">Menu 4</li>
+                            <li class="nav-item">Menu 5</li>
+                            <li class="nav-item">Menu 6</li>
+                            <li class="nav-item">Menu 7</li>
+                            <li class="nav-item">Menu 8</li>
+                            <li class="nav-item">Menu 9</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-login">
+                    <span class="login-close-btn">
+                        <span class="close-bar"></span>
+                        <span class="close-bar"></span>
+                    </span>
+                    <div class="user-profile-2 flex flex-center flex-v-center flex-column">
+                        <span class="user flex flex-center flex-v-center">
+                            <svg class="icons user--icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M224 256c70.7 0 128-57.31 128-128S294.7 0 224 0 96 57.31 96 128s57.3 128 128 128zm50.7 48H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3c0-95.7-77.6-173.3-173.3-173.3z" />
+                            </svg>
+                        </span>
+                        <h2 class="login-title">
+                            Login or sign up
+                        </h2>
+                    </div>
+                    <div class="login-blocks">
+                        <div class="login-option login--fb flex flex-center flex-v-center">
+                            <span class="login-icon flex flex-center flex-v-center">
+                                <svg class="icons fb--icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="m279.14 288 14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                                </svg>
+                            </span>
+                            <h2 class="login-by">Continue with Facebook</h2>
+                        </div>
+                        <div class="login-option login--google flex flex-center flex-v-center">
+                            <span class="login-icon flex flex-center flex-v-center">
+                                <svg class="icons google--icon" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 640 512">
+                                    <path
+                                        d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z" />
+                                </svg>
+                            </span>
+                            <h2 class="login-by">Continue with Google</h2>
+                        </div>
+
+                        <h2 class="login-text">Or, use you email address</h2>
+                        <div class="login-option login-option--email flex flex-center flex-v-center">
+                            <button class="login-btn option-signin">Log In</button>
+                            <button class="login-btn option-signup">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Hero section -->
+        <section class="hero-container">
+            <div class="search-box">
+                <span class="icons find--icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M500.3 443.7 380.6 324c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723 99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9 53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0 15.606-15.64 15.606-41.04.006-56.64zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128-57.42 128-128 128-128-57.4-128-128z" />
+                    </svg>
+                </span>
+                <input class="hero-search" type="text" placeholder="Search">
+            </div>
+
+            <div class="hero-section">
+                <div class="hero-slide hero-slide-1">
+                    <img class="hero-img" src="./assets/images/hero1.jpg" alt="College One">
+
+                    <div class="hero-meta">
+                        <h1 class="hero-title">Find Every College, Exam and Course at one Plaace</h1>
+
+                        <p class="hero-college-name">Shiv Nagar University, Noida</p>
+                    </div>
+                </div>
+                <div class="hero-slide hero-slide-2">
+                    <img class="hero-img" src="./assets/images/hero2.jpg" alt="College two">
+                    <div class="hero-meta">
+                        <h1 class="hero-title">Find Every College, Exam and Course at one Plaace</h1>
+
+                        <p class="hero-college-name">Shiv Nagar University, Noida</p>
+                    </div>
+                </div>
+                <div class="hero-slide hero-slide-3">
+                    <img class="hero-img" src="./assets/images/hero3.jpg" alt="College three">
+                    <div class="hero-meta">
+                        <h1 class="hero-title">Find Every College, Exam and Course at one Plaace</h1>
+
+                        <p class="hero-college-name">Shiv Nagar University, Noida</p>
+                    </div>
+                </div>
+                <div class="hero-slide hero-slide-4">
+                    <img class="hero-img" src="./assets/images/hero4.jpg" alt="College four">
+                    <div class="hero-meta">
+                        <h1 class="hero-title">Find Every College, Exam and Course at one Plaace</h1>
+
+                        <p class="hero-college-name">Shiv Nagar University, Noida</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section ends here -->
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <div class="services-list">
+                <div class="service">
+                    <span>
+                        <svg class="icons service--icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M243.4 2.587c8-3.45 17.2-3.45 25.2 0l224 96.003c14 6.01 21.8 21.01 18.7 35.81-3 14.9-16.1 24.7-32.2 25.6v8c0 13.3-9.8 24-24 24h-400c-12.36 0-24-10.7-24-24v-8c-14.29-.9-27.392-10.7-30.447-25.6-3.055-14.8 4.776-29.8 18.737-35.81L243.4 2.587zM256 128c17.7 0 32-14.3 32-32 0-17.67-14.3-32-32-32s-32 14.33-32 32c0 17.7 14.3 32 32 32zM127.1 416h40V224h64v192H280V224h64v192h40V224h64v196.3c.6.3 1.2-.2 1.8 1.1l48 32c11.7 7.8 16.9 22.4 12.8 35.9-4.1 13.5-16.5 22.7-30.6 22.7H31.1c-13.2 0-25.642-9.2-29.728-22.7-4.087-13.5 1.143-28.1 12.878-35.9l48-32c.57-1.3 1.16-.8.85-1.1V224h64v192z" />
+                        </svg>
+                    </span>
+                    <h2 class="service-title uppercase">Find College</h2>
+                </div>
+                <div class="service">
+                    <span>
+                        <svg class="icons service--icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M243.4 2.587c8-3.45 17.2-3.45 25.2 0l224 96.003c14 6.01 21.8 21.01 18.7 35.81-3 14.9-16.1 24.7-32.2 25.6v8c0 13.3-9.8 24-24 24h-400c-12.36 0-24-10.7-24-24v-8c-14.29-.9-27.392-10.7-30.447-25.6-3.055-14.8 4.776-29.8 18.737-35.81L243.4 2.587zM256 128c17.7 0 32-14.3 32-32 0-17.67-14.3-32-32-32s-32 14.33-32 32c0 17.7 14.3 32 32 32zM127.1 416h40V224h64v192H280V224h64v192h40V224h64v196.3c.6.3 1.2-.2 1.8 1.1l48 32c11.7 7.8 16.9 22.4 12.8 35.9-4.1 13.5-16.5 22.7-30.6 22.7H31.1c-13.2 0-25.642-9.2-29.728-22.7-4.087-13.5 1.143-28.1 12.878-35.9l48-32c.57-1.3 1.16-.8.85-1.1V224h64v192z" />
+                        </svg>
+                    </span>
+                    <h2>Find College</h2>
+                </div>
+                <div class="service">
+                    <span>
+                        <svg class="icons service--icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M243.4 2.587c8-3.45 17.2-3.45 25.2 0l224 96.003c14 6.01 21.8 21.01 18.7 35.81-3 14.9-16.1 24.7-32.2 25.6v8c0 13.3-9.8 24-24 24h-400c-12.36 0-24-10.7-24-24v-8c-14.29-.9-27.392-10.7-30.447-25.6-3.055-14.8 4.776-29.8 18.737-35.81L243.4 2.587zM256 128c17.7 0 32-14.3 32-32 0-17.67-14.3-32-32-32s-32 14.33-32 32c0 17.7 14.3 32 32 32zM127.1 416h40V224h64v192H280V224h64v192h40V224h64v196.3c.6.3 1.2-.2 1.8 1.1l48 32c11.7 7.8 16.9 22.4 12.8 35.9-4.1 13.5-16.5 22.7-30.6 22.7H31.1c-13.2 0-25.642-9.2-29.728-22.7-4.087-13.5 1.143-28.1 12.878-35.9l48-32c.57-1.3 1.16-.8.85-1.1V224h64v192z" />
+                        </svg>
+                    </span>
+                    <h2 class="service-title uppercase">Explore Exams</h2>
+                </div>
+                <div class="service">
+                    <span>
+                        <svg class="icons service--icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M243.4 2.587c8-3.45 17.2-3.45 25.2 0l224 96.003c14 6.01 21.8 21.01 18.7 35.81-3 14.9-16.1 24.7-32.2 25.6v8c0 13.3-9.8 24-24 24h-400c-12.36 0-24-10.7-24-24v-8c-14.29-.9-27.392-10.7-30.447-25.6-3.055-14.8 4.776-29.8 18.737-35.81L243.4 2.587zM256 128c17.7 0 32-14.3 32-32 0-17.67-14.3-32-32-32s-32 14.33-32 32c0 17.7 14.3 32 32 32zM127.1 416h40V224h64v192H280V224h64v192h40V224h64v196.3c.6.3 1.2-.2 1.8 1.1l48 32c11.7 7.8 16.9 22.4 12.8 35.9-4.1 13.5-16.5 22.7-30.6 22.7H31.1c-13.2 0-25.642-9.2-29.728-22.7-4.087-13.5 1.143-28.1 12.878-35.9l48-32c.57-1.3 1.16-.8.85-1.1V224h64v192z" />
+                        </svg>
+                    </span>
+                    <h2 class="service-title uppercase">Get Latest News</h2>
+                </div>
+                <div class="service">
+                    <span>
+                        <svg class="icons service--icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M243.4 2.587c8-3.45 17.2-3.45 25.2 0l224 96.003c14 6.01 21.8 21.01 18.7 35.81-3 14.9-16.1 24.7-32.2 25.6v8c0 13.3-9.8 24-24 24h-400c-12.36 0-24-10.7-24-24v-8c-14.29-.9-27.392-10.7-30.447-25.6-3.055-14.8 4.776-29.8 18.737-35.81L243.4 2.587zM256 128c17.7 0 32-14.3 32-32 0-17.67-14.3-32-32-32s-32 14.33-32 32c0 17.7 14.3 32 32 32zM127.1 416h40V224h64v192H280V224h64v192h40V224h64v196.3c.6.3 1.2-.2 1.8 1.1l48 32c11.7 7.8 16.9 22.4 12.8 35.9-4.1 13.5-16.5 22.7-30.6 22.7H31.1c-13.2 0-25.642-9.2-29.728-22.7-4.087-13.5 1.143-28.1 12.878-35.9l48-32c.57-1.3 1.16-.8.85-1.1V224h64v192z" />
+                        </svg>
+                    </span>
+                    <h2 class="service-title uppercase">Top Reviews</h2>
+                </div>
+                <div class="service">
+                    <span>
+                        <svg class="icons service--icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M243.4 2.587c8-3.45 17.2-3.45 25.2 0l224 96.003c14 6.01 21.8 21.01 18.7 35.81-3 14.9-16.1 24.7-32.2 25.6v8c0 13.3-9.8 24-24 24h-400c-12.36 0-24-10.7-24-24v-8c-14.29-.9-27.392-10.7-30.447-25.6-3.055-14.8 4.776-29.8 18.737-35.81L243.4 2.587zM256 128c17.7 0 32-14.3 32-32 0-17.67-14.3-32-32-32s-32 14.33-32 32c0 17.7 14.3 32 32 32zM127.1 416h40V224h64v192H280V224h64v192h40V224h64v196.3c.6.3 1.2-.2 1.8 1.1l48 32c11.7 7.8 16.9 22.4 12.8 35.9-4.1 13.5-16.5 22.7-30.6 22.7H31.1c-13.2 0-25.642-9.2-29.728-22.7-4.087-13.5 1.143-28.1 12.878-35.9l48-32c.57-1.3 1.16-.8.85-1.1V224h64v192z" />
+                        </svg>
+                    </span>
+                    <h2 class="service-title uppercase">Top Courses</h2>
+                </div>
+                <div class="service">
+                    <span>
+                        <svg class="icons service--icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M243.4 2.587c8-3.45 17.2-3.45 25.2 0l224 96.003c14 6.01 21.8 21.01 18.7 35.81-3 14.9-16.1 24.7-32.2 25.6v8c0 13.3-9.8 24-24 24h-400c-12.36 0-24-10.7-24-24v-8c-14.29-.9-27.392-10.7-30.447-25.6-3.055-14.8 4.776-29.8 18.737-35.81L243.4 2.587zM256 128c17.7 0 32-14.3 32-32 0-17.67-14.3-32-32-32s-32 14.33-32 32c0 17.7 14.3 32 32 32zM127.1 416h40V224h64v192H280V224h64v192h40V224h64v196.3c.6.3 1.2-.2 1.8 1.1l48 32c11.7 7.8 16.9 22.4 12.8 35.9-4.1 13.5-16.5 22.7-30.6 22.7H31.1c-13.2 0-25.642-9.2-29.728-22.7-4.087-13.5 1.143-28.1 12.878-35.9l48-32c.57-1.3 1.16-.8.85-1.1V224h64v192z" />
+                        </svg>
+                    </span>
+                    <h2 class="service-title uppercase">Get Admission</h2>
+                </div>
+                <div class="service">
+                    <span>
+                        <svg class="icons service--icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M243.4 2.587c8-3.45 17.2-3.45 25.2 0l224 96.003c14 6.01 21.8 21.01 18.7 35.81-3 14.9-16.1 24.7-32.2 25.6v8c0 13.3-9.8 24-24 24h-400c-12.36 0-24-10.7-24-24v-8c-14.29-.9-27.392-10.7-30.447-25.6-3.055-14.8 4.776-29.8 18.737-35.81L243.4 2.587zM256 128c17.7 0 32-14.3 32-32 0-17.67-14.3-32-32-32s-32 14.33-32 32c0 17.7 14.3 32 32 32zM127.1 416h40V224h64v192H280V224h64v192h40V224h64v196.3c.6.3 1.2-.2 1.8 1.1l48 32c11.7 7.8 16.9 22.4 12.8 35.9-4.1 13.5-16.5 22.7-30.6 22.7H31.1c-13.2 0-25.642-9.2-29.728-22.7-4.087-13.5 1.143-28.1 12.878-35.9l48-32c.57-1.3 1.16-.8.85-1.1V224h64v192z" />
+                        </svg>
+                    </span>
+                    <h2 class="service-title uppercase">Cut Off</h2>
+                </div>
+                <div class="service">
+                    <span>
+                        <svg class="icons service--icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M243.4 2.587c8-3.45 17.2-3.45 25.2 0l224 96.003c14 6.01 21.8 21.01 18.7 35.81-3 14.9-16.1 24.7-32.2 25.6v8c0 13.3-9.8 24-24 24h-400c-12.36 0-24-10.7-24-24v-8c-14.29-.9-27.392-10.7-30.447-25.6-3.055-14.8 4.776-29.8 18.737-35.81L243.4 2.587zM256 128c17.7 0 32-14.3 32-32 0-17.67-14.3-32-32-32s-32 14.33-32 32c0 17.7 14.3 32 32 32zM127.1 416h40V224h64v192H280V224h64v192h40V224h64v196.3c.6.3 1.2-.2 1.8 1.1l48 32c11.7 7.8 16.9 22.4 12.8 35.9-4.1 13.5-16.5 22.7-30.6 22.7H31.1c-13.2 0-25.642-9.2-29.728-22.7-4.087-13.5 1.143-28.1 12.878-35.9l48-32c.57-1.3 1.16-.8.85-1.1V224h64v192z" />
+                        </svg>
+                    </span>
+                    <h2 class="service-title uppercase">GPA Calculator</h2>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section ends here-->
+        <!-- College and Exam Section-->
+        <section class="college-exam-section">
+            <div class="college-exam-intro">
+                <div class="section-info">
+                    <h2 class="section-title">Explore your future</h2>
+                    <p>Select for college and exam</p>
+                </div>
+                <div class="section-icon">
+                    <span>
+                        <svg class="icons course--icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path
+                                d="M623.1 136.9 340.4 35.7a62.951 62.951 0 0 0-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09l60.02 21.51c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480h58.22c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89a106.301 106.301 0 0 1 24.94-47.03l190.6 68.23a62.951 62.951 0 0 0 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160s-6.4-19.6-16.9-23.1zm-272 177.5c-9.4 3.7-20.2 5.6-31.1 5.6a94.767 94.767 0 0 1-32-5.555L142.8 262.5 128 405.3c0 41.3 85.1 74.7 192 74.7 105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+            <div class="college-exam-tabber flex flex-center">
+                <button class="btn btn-college uppercase active" data-content="college-data">College</button>
+                <button class="btn btn-exam uppercase" data-content="course-data">Exam</button>
+            </div>
+
+            <div class="college-exam-list">
+                <div class="college-list content-list active" id="college-data">
+                    <div class="college">
+                        <span class="college-icon">
+                            <svg class="icons icon--college" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M243.4 2.587c8-3.45 17.2-3.45 25.2 0l224 96.003c14 6.01 21.8 21.01 18.7 35.81-3 14.9-16.1 24.7-32.2 25.6v8c0 13.3-9.8 24-24 24h-400c-12.36 0-24-10.7-24-24v-8c-14.29-.9-27.392-10.7-30.447-25.6-3.055-14.8 4.776-29.8 18.737-35.81L243.4 2.587zM256 128c17.7 0 32-14.3 32-32 0-17.67-14.3-32-32-32s-32 14.33-32 32c0 17.7 14.3 32 32 32zM127.1 416h40V224h64v192H280V224h64v192h40V224h64v196.3c.6.3 1.2-.2 1.8 1.1l48 32c11.7 7.8 16.9 22.4 12.8 35.9-4.1 13.5-16.5 22.7-30.6 22.7H31.1c-13.2 0-25.642-9.2-29.728-22.7-4.087-13.5 1.143-28.1 12.878-35.9l48-32c.57-1.3 1.16-.8.85-1.1V224h64v192z" />
+                            </svg>
+                        </span>
+                        <h2 class="college-title uppercase">
+                            Management College
+                        </h2>
+                    </div>
+                    <div class="college">
+                        <span class="college-icon">
+                            <svg class="icons icon--college" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M243.4 2.587c8-3.45 17.2-3.45 25.2 0l224 96.003c14 6.01 21.8 21.01 18.7 35.81-3 14.9-16.1 24.7-32.2 25.6v8c0 13.3-9.8 24-24 24h-400c-12.36 0-24-10.7-24-24v-8c-14.29-.9-27.392-10.7-30.447-25.6-3.055-14.8 4.776-29.8 18.737-35.81L243.4 2.587zM256 128c17.7 0 32-14.3 32-32 0-17.67-14.3-32-32-32s-32 14.33-32 32c0 17.7 14.3 32 32 32zM127.1 416h40V224h64v192H280V224h64v192h40V224h64v196.3c.6.3 1.2-.2 1.8 1.1l48 32c11.7 7.8 16.9 22.4 12.8 35.9-4.1 13.5-16.5 22.7-30.6 22.7H31.1c-13.2 0-25.642-9.2-29.728-22.7-4.087-13.5 1.143-28.1 12.878-35.9l48-32c.57-1.3 1.16-.8.85-1.1V224h64v192z" />
+                            </svg>
+                        </span>
+                        <h2 class="college-title uppercase">
+                            Engineering College
+                        </h2>
+                    </div>
+                    <div class="college">
+                        <span class="college-icon">
+                            <svg class="icons icon--college" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M243.4 2.587c8-3.45 17.2-3.45 25.2 0l224 96.003c14 6.01 21.8 21.01 18.7 35.81-3 14.9-16.1 24.7-32.2 25.6v8c0 13.3-9.8 24-24 24h-400c-12.36 0-24-10.7-24-24v-8c-14.29-.9-27.392-10.7-30.447-25.6-3.055-14.8 4.776-29.8 18.737-35.81L243.4 2.587zM256 128c17.7 0 32-14.3 32-32 0-17.67-14.3-32-32-32s-32 14.33-32 32c0 17.7 14.3 32 32 32zM127.1 416h40V224h64v192H280V224h64v192h40V224h64v196.3c.6.3 1.2-.2 1.8 1.1l48 32c11.7 7.8 16.9 22.4 12.8 35.9-4.1 13.5-16.5 22.7-30.6 22.7H31.1c-13.2 0-25.642-9.2-29.728-22.7-4.087-13.5 1.143-28.1 12.878-35.9l48-32c.57-1.3 1.16-.8.85-1.1V224h64v192z" />
+                            </svg>
+                        </span>
+                        <h2 class="college-title uppercase">
+                            Arts College
+                        </h2>
+                    </div>
+                    <div class="college">
+                        <span class="college-icon">
+                            <svg class="icons icon--college" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M243.4 2.587c8-3.45 17.2-3.45 25.2 0l224 96.003c14 6.01 21.8 21.01 18.7 35.81-3 14.9-16.1 24.7-32.2 25.6v8c0 13.3-9.8 24-24 24h-400c-12.36 0-24-10.7-24-24v-8c-14.29-.9-27.392-10.7-30.447-25.6-3.055-14.8 4.776-29.8 18.737-35.81L243.4 2.587zM256 128c17.7 0 32-14.3 32-32 0-17.67-14.3-32-32-32s-32 14.33-32 32c0 17.7 14.3 32 32 32zM127.1 416h40V224h64v192H280V224h64v192h40V224h64v196.3c.6.3 1.2-.2 1.8 1.1l48 32c11.7 7.8 16.9 22.4 12.8 35.9-4.1 13.5-16.5 22.7-30.6 22.7H31.1c-13.2 0-25.642-9.2-29.728-22.7-4.087-13.5 1.143-28.1 12.878-35.9l48-32c.57-1.3 1.16-.8.85-1.1V224h64v192z" />
+                            </svg>
+                        </span>
+                        <h2 class="college-title uppercase">
+                            Science College
+                        </h2>
+                    </div>
+                    <div class="college">
+                        <span class="college-icon">
+                            <svg class="icons icon--college" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M243.4 2.587c8-3.45 17.2-3.45 25.2 0l224 96.003c14 6.01 21.8 21.01 18.7 35.81-3 14.9-16.1 24.7-32.2 25.6v8c0 13.3-9.8 24-24 24h-400c-12.36 0-24-10.7-24-24v-8c-14.29-.9-27.392-10.7-30.447-25.6-3.055-14.8 4.776-29.8 18.737-35.81L243.4 2.587zM256 128c17.7 0 32-14.3 32-32 0-17.67-14.3-32-32-32s-32 14.33-32 32c0 17.7 14.3 32 32 32zM127.1 416h40V224h64v192H280V224h64v192h40V224h64v196.3c.6.3 1.2-.2 1.8 1.1l48 32c11.7 7.8 16.9 22.4 12.8 35.9-4.1 13.5-16.5 22.7-30.6 22.7H31.1c-13.2 0-25.642-9.2-29.728-22.7-4.087-13.5 1.143-28.1 12.878-35.9l48-32c.57-1.3 1.16-.8.85-1.1V224h64v192z" />
+                            </svg>
+                        </span>
+                        <h2 class="college-title uppercase">
+                            Commerce College
+                        </h2>
+                    </div>
+                    <div class="college">
+                        <span class="college-icon">
+                            <svg class="icons icon--college" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M243.4 2.587c8-3.45 17.2-3.45 25.2 0l224 96.003c14 6.01 21.8 21.01 18.7 35.81-3 14.9-16.1 24.7-32.2 25.6v8c0 13.3-9.8 24-24 24h-400c-12.36 0-24-10.7-24-24v-8c-14.29-.9-27.392-10.7-30.447-25.6-3.055-14.8 4.776-29.8 18.737-35.81L243.4 2.587zM256 128c17.7 0 32-14.3 32-32 0-17.67-14.3-32-32-32s-32 14.33-32 32c0 17.7 14.3 32 32 32zM127.1 416h40V224h64v192H280V224h64v192h40V224h64v196.3c.6.3 1.2-.2 1.8 1.1l48 32c11.7 7.8 16.9 22.4 12.8 35.9-4.1 13.5-16.5 22.7-30.6 22.7H31.1c-13.2 0-25.642-9.2-29.728-22.7-4.087-13.5 1.143-28.1 12.878-35.9l48-32c.57-1.3 1.16-.8.85-1.1V224h64v192z" />
+                            </svg>
+                        </span>
+                        <h2 class="college-title uppercase">
+                            Design College
+                        </h2>
+                    </div>
+                    <div class="college">
+                        <span class="college-icon">
+                            <svg class="icons icon--college" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M243.4 2.587c8-3.45 17.2-3.45 25.2 0l224 96.003c14 6.01 21.8 21.01 18.7 35.81-3 14.9-16.1 24.7-32.2 25.6v8c0 13.3-9.8 24-24 24h-400c-12.36 0-24-10.7-24-24v-8c-14.29-.9-27.392-10.7-30.447-25.6-3.055-14.8 4.776-29.8 18.737-35.81L243.4 2.587zM256 128c17.7 0 32-14.3 32-32 0-17.67-14.3-32-32-32s-32 14.33-32 32c0 17.7 14.3 32 32 32zM127.1 416h40V224h64v192H280V224h64v192h40V224h64v196.3c.6.3 1.2-.2 1.8 1.1l48 32c11.7 7.8 16.9 22.4 12.8 35.9-4.1 13.5-16.5 22.7-30.6 22.7H31.1c-13.2 0-25.642-9.2-29.728-22.7-4.087-13.5 1.143-28.1 12.878-35.9l48-32c.57-1.3 1.16-.8.85-1.1V224h64v192z" />
+                            </svg>
+                        </span>
+                        <h2 class="college-title uppercase">
+                            Medical College
+                        </h2>
+                    </div>
+                    <div class="college">
+                        <span class="college-icon">
+                            <svg class="icons icon--college" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M243.4 2.587c8-3.45 17.2-3.45 25.2 0l224 96.003c14 6.01 21.8 21.01 18.7 35.81-3 14.9-16.1 24.7-32.2 25.6v8c0 13.3-9.8 24-24 24h-400c-12.36 0-24-10.7-24-24v-8c-14.29-.9-27.392-10.7-30.447-25.6-3.055-14.8 4.776-29.8 18.737-35.81L243.4 2.587zM256 128c17.7 0 32-14.3 32-32 0-17.67-14.3-32-32-32s-32 14.33-32 32c0 17.7 14.3 32 32 32zM127.1 416h40V224h64v192H280V224h64v192h40V224h64v196.3c.6.3 1.2-.2 1.8 1.1l48 32c11.7 7.8 16.9 22.4 12.8 35.9-4.1 13.5-16.5 22.7-30.6 22.7H31.1c-13.2 0-25.642-9.2-29.728-22.7-4.087-13.5 1.143-28.1 12.878-35.9l48-32c.57-1.3 1.16-.8.85-1.1V224h64v192z" />
+                            </svg>
+                        </span>
+                        <h2 class="college-title uppercase">
+                            Diploma College
+                        </h2>
+                    </div>
+                </div>
+                <div class="courses-list content-list" id="course-data">
+                    <div class="course">
+                        <span class="course-icon">
+                            <svg class="icons icon--course" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path
+                                    d="M623.1 136.9 340.4 35.7a62.951 62.951 0 0 0-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09l60.02 21.51c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480h58.22c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89a106.301 106.301 0 0 1 24.94-47.03l190.6 68.23a62.951 62.951 0 0 0 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160s-6.4-19.6-16.9-23.1zm-272 177.5c-9.4 3.7-20.2 5.6-31.1 5.6a94.767 94.767 0 0 1-32-5.555L142.8 262.5 128 405.3c0 41.3 85.1 74.7 192 74.7 105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z" />
+                            </svg>
+                        </span>
+                        <h2 class="course-title uppercase">Medical Exam</h2>
+                    </div>
+                    <div class="course">
+                        <span class="course-icon">
+                            <svg class="icons icon--course" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path
+                                    d="M623.1 136.9 340.4 35.7a62.951 62.951 0 0 0-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09l60.02 21.51c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480h58.22c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89a106.301 106.301 0 0 1 24.94-47.03l190.6 68.23a62.951 62.951 0 0 0 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160s-6.4-19.6-16.9-23.1zm-272 177.5c-9.4 3.7-20.2 5.6-31.1 5.6a94.767 94.767 0 0 1-32-5.555L142.8 262.5 128 405.3c0 41.3 85.1 74.7 192 74.7 105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z" />
+                            </svg>
+                        </span>
+                        <h2 class="course-title uppercase">Engineering Exam</h2>
+                    </div>
+                    <div class="course">
+                        <span class="course-icon">
+                            <svg class="icons icon--course" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path
+                                    d="M623.1 136.9 340.4 35.7a62.951 62.951 0 0 0-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09l60.02 21.51c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480h58.22c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89a106.301 106.301 0 0 1 24.94-47.03l190.6 68.23a62.951 62.951 0 0 0 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160s-6.4-19.6-16.9-23.1zm-272 177.5c-9.4 3.7-20.2 5.6-31.1 5.6a94.767 94.767 0 0 1-32-5.555L142.8 262.5 128 405.3c0 41.3 85.1 74.7 192 74.7 105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z" />
+                            </svg>
+                        </span>
+                        <h2 class="course-title uppercase">Pharmacy Exam</h2>
+                    </div>
+                    <div class="course">
+                        <span class="course-icon">
+                            <svg class="icons icon--course" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path
+                                    d="M623.1 136.9 340.4 35.7a62.951 62.951 0 0 0-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09l60.02 21.51c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480h58.22c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89a106.301 106.301 0 0 1 24.94-47.03l190.6 68.23a62.951 62.951 0 0 0 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160s-6.4-19.6-16.9-23.1zm-272 177.5c-9.4 3.7-20.2 5.6-31.1 5.6a94.767 94.767 0 0 1-32-5.555L142.8 262.5 128 405.3c0 41.3 85.1 74.7 192 74.7 105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z" />
+                            </svg>
+                        </span>
+                        <h2 class="course-title uppercase">Certificate Exam</h2>
+                    </div>
+                    <div class="course">
+                        <span class="course-icon">
+                            <svg class="icons icon--course" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path
+                                    d="M623.1 136.9 340.4 35.7a62.951 62.951 0 0 0-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09l60.02 21.51c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480h58.22c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89a106.301 106.301 0 0 1 24.94-47.03l190.6 68.23a62.951 62.951 0 0 0 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160s-6.4-19.6-16.9-23.1zm-272 177.5c-9.4 3.7-20.2 5.6-31.1 5.6a94.767 94.767 0 0 1-32-5.555L142.8 262.5 128 405.3c0 41.3 85.1 74.7 192 74.7 105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z" />
+                            </svg>
+                        </span>
+                        <h2 class="course-title uppercase">School Exam</h2>
+                    </div>
+                    <div class="course">
+                        <span class="course-icon">
+                            <svg class="icons icon--course" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path
+                                    d="M623.1 136.9 340.4 35.7a62.951 62.951 0 0 0-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09l60.02 21.51c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480h58.22c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89a106.301 106.301 0 0 1 24.94-47.03l190.6 68.23a62.951 62.951 0 0 0 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160s-6.4-19.6-16.9-23.1zm-272 177.5c-9.4 3.7-20.2 5.6-31.1 5.6a94.767 94.767 0 0 1-32-5.555L142.8 262.5 128 405.3c0 41.3 85.1 74.7 192 74.7 105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z" />
+                            </svg>
+                        </span>
+                        <h2 class="course-title uppercase">Diploma Exam</h2>
+                    </div>
+                    <div class="course">
+                        <span class="course-icon">
+                            <svg class="icons icon--course" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path
+                                    d="M623.1 136.9 340.4 35.7a62.951 62.951 0 0 0-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09l60.02 21.51c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480h58.22c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89a106.301 106.301 0 0 1 24.94-47.03l190.6 68.23a62.951 62.951 0 0 0 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160s-6.4-19.6-16.9-23.1zm-272 177.5c-9.4 3.7-20.2 5.6-31.1 5.6a94.767 94.767 0 0 1-32-5.555L142.8 262.5 128 405.3c0 41.3 85.1 74.7 192 74.7 105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z" />
+                            </svg>
+                        </span>
+                        <h2 class="course-title uppercase">Science Exam</h2>
+                    </div>
+                    <div class="course">
+                        <span class="course-icon">
+                            <svg class="icons icon--course" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path
+                                    d="M623.1 136.9 340.4 35.7a62.951 62.951 0 0 0-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09l60.02 21.51c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480h58.22c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89a106.301 106.301 0 0 1 24.94-47.03l190.6 68.23a62.951 62.951 0 0 0 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160s-6.4-19.6-16.9-23.1zm-272 177.5c-9.4 3.7-20.2 5.6-31.1 5.6a94.767 94.767 0 0 1-32-5.555L142.8 262.5 128 405.3c0 41.3 85.1 74.7 192 74.7 105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z" />
+                            </svg>
+                        </span>
+                        <h2 class="course-title uppercase">Vocational Courses</h2>
+                    </div>
+                    <div class="course">
+                        <span class="course-icon">
+                            <svg class="icons icon--course" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path
+                                    d="M623.1 136.9 340.4 35.7a62.951 62.951 0 0 0-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09l60.02 21.51c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480h58.22c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89a106.301 106.301 0 0 1 24.94-47.03l190.6 68.23a62.951 62.951 0 0 0 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160s-6.4-19.6-16.9-23.1zm-272 177.5c-9.4 3.7-20.2 5.6-31.1 5.6a94.767 94.767 0 0 1-32-5.555L142.8 262.5 128 405.3c0 41.3 85.1 74.7 192 74.7 105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z" />
+                            </svg>
+                        </span>
+                        <h2 class="course-title uppercase">Hotel Management Exam</h2>
+                    </div>
+                </div>
+            </div>
+
+        </section> <!-- College and Exam Section-->
+        <!-- Featured Colleges Section-->
+        <section class="featured-college-section">
+            <div class="featured-college-intro flex flex-between flex-v-center">
+                <div class="featured-college-meta">
+                    <h2 class="section-title">Top Featured Colleges</h2>
+                    <p class="section-description">Top College Cherry Picked for you</p>
+                </div>
+                <div class="featured-college--icon">
+                    <svg class="icons icon--college" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                        <path
+                            d="M320 128c8.8 0 16 7.2 16 16v16h16c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32c-8.8 0-16-7.2-16-16v-32c0-8.8 7.2-16 16-16zm156.8-29.94 125.6 27.04c22 5.8 37.6 25.2 37.6 47.7V464c0 26.5-21.5 48-48 48H48c-26.51 0-48-21.5-48-48V172.8c0-22.5 15.63-41.9 37.59-47.7L163.2 98.06l139-92.686c9.9-7.165 24.8-7.165 35.6 0l139 92.686zM256 512h128v-96c0-35.3-28.7-64-64-64s-64 28.7-64 64v96zM96 192c-8.84 0-16 7.2-16 16v64c0 8.8 7.16 16 16 16h32c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16H96zm400 80c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v64zM96 320c-8.84 0-16 7.2-16 16v64c0 8.8 7.16 16 16 16h32c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16H96zm400 80c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v64zM320 88c-48.6 0-88 39.4-88 88s39.4 88 88 88 88-39.4 88-88-39.4-88-88-88z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="featured-college-wrapper">
+                <div class="featured-college-lists feature-scroll-x">
+                    <div class="featured-college">
+                        <img class="featured-college-img cover-img" src="./assets/images/featured-college1.jpg"
+                            alt="Featured College">
+                        <span class="overlay"></span>
+                        <div class="featured-college-content">
+                            <span class="college-counter">1 / 6</span>
+                            <h2 class="college-title uppercase">College Name</h2>
+                        </div>
+                    </div>
+                    <div class="featured-college">
+                        <img class="featured-college-img cover-img" src="./assets/images/featured-college2.jpg"
+                            alt="Featured College">
+                        <span class="overlay"></span>
+                        <div class="featured-college-content">
+                            <span class="college-counter">2 / 6</span>
+                            <h2 class="college-title uppercase">College Name</h2>
+                        </div>
+                    </div>
+                    <div class="featured-college">
+                        <img class="featured-college-img cover-img" src="./assets/images/featured-college3.jpg"
+                            alt="Featured College">
+                        <span class="overlay"></span>
+                        <div class="featured-college-content">
+                            <span class="college-counter">3 / 6</span>
+                            <h2 class="college-title uppercase">College Name</h2>
+                        </div>
+                    </div>
+                    <div class="featured-college">
+                        <img class="featured-college-img cover-img" src="./assets/images/featured-college4.jpg"
+                            alt="Featured College">
+                        <span class="overlay"></span>
+                        <div class="featured-college-content">
+                            <span class="college-counter">4 / 6</span>
+                            <h2 class="college-title uppercase">College Name</h2>
+                        </div>
+                    </div>
+                    <div class="featured-college">
+                        <img class="featured-college-img cover-img" src="./assets/images/featured-college5.jpg"
+                            alt="Featured College">
+                        <span class="overlay"></span>
+                        <div class="featured-college-content">
+                            <span class="college-counter">5 / 6</span>
+                            <h2 class="college-title uppercase">College Name</h2>
+                        </div>
+                    </div>
+                    <div class="featured-college">
+                        <img class="featured-college-img cover-img" src="./assets/images/featured-college6.jpg"
+                            alt="Featured College">
+                        <span class="overlay"></span>
+                        <div class="featured-college-content">
+                            <span class="college-counter">6 / 6</span>
+
+                            <h2 class="college-title uppercase">
+                                College Name</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
